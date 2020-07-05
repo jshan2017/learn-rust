@@ -3,7 +3,7 @@
 ## 상수
 
 - 상수는 `const` 키워드를 붙여 선언한다.
-- 컴파일 타입에 값이 결정되어야 하며 타입을 명시해서 선언해야 한다. `C/C++`의 `static` 과 유사.
+- 컴파일 타입에 값이 결정되어야 하며 타입을 명시해서 선언해야 한다. C/C++의 `static` 과 유사.
 
 ## Variable Shadowing
 
@@ -18,13 +18,13 @@
 let guess: u32 = "42".parse().expect("Nan");
 ```
 
-### Scalar Type
+## Scalar Types
 
 - Scalar Type은 단일 데이터를 표현하는 integer, floating point number, boolean, character 네가지 유형의 타입을 의미한다.
 
 - Rust의 `char`형은 4바이트를 차지하여 유니코드를 사용 가능하다.
 
-### Compound Type
+## Compound Types
 
 - Compound Type은 복수의 데이터를 그룹화한 타입이다. 기본적으로 tuple과 array가 있다.
 - tupple은 `()`를 이용해 선언하며 요소들은 자료형이 달라도 된다.
@@ -49,10 +49,10 @@ let a = [0; 5];
 
 ## 함수
 
-- `C/C++`와 달리 함수의 선언 순서는 중요하지 않다.
+- C/C++와 달리 함수의 선언 순서는 중요하지 않다.
 - parameter와 return value의 type을 명시해주어야 한다.
 
-### Statements & Expression
+## Statements & Expression
 
 - 평가되어 값이 리턴되면 Expression 그렇지 않으면 Statements다.
 - 아래와 같은 사용이 가능
@@ -66,7 +66,7 @@ let b = {
 println!("{}", b); // -> 4
 ```
 
-### 값을 리턴하는 함수
+## 값을 리턴하는 함수
 
 - Rust에서 `return` 키워드를 사용하여 함수 중간에서 리턴할 수 있다.
 - `return`이 없는경우 **마지막 Expression**의 결과를 리턴한다.
@@ -80,9 +80,9 @@ println!("{}", b); // -> 4
 if 3 {} // err
 ```
 
-- `Scala`와 유사하게 `if`문 또한 expression이므로 리턴값을 가진다. 이때 모든 case에 대한 return type이 같아야 한다.
+- Scala와 유사하게 `if`문 또한 expression이므로 리턴값을 가진다. 이때 모든 case에 대한 return type이 같아야 한다.
 
-### 반복문
+## 반복문
 
-- loop, for, while 키워드를 사용하여 반복문을 사용 할 수 있다.
-- loop의 경우 break 뒤에 값을 붙이면 그 값으로 evaluate 된다.
+- `loop`, `for`, `while` 키워드를 사용하여 반복문을 사용 할 수 있다.
+- `loop`의 경우 `break` 뒤에 값을 붙이면 그 값으로 evaluate 된다.
